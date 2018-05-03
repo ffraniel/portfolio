@@ -1,0 +1,115 @@
+/* globals */
+body{
+    margin: 0 auto;
+    background-color:rgba(206, 221, 206, 0.301);
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 300;
+  }
+
+a{
+    text-decoration: none;
+}
+/* header and nav */
+
+header nav{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color:#FF3B4E;
+    color:#FFFFFF;
+    font-family:arial;
+    height:40px;
+    line-height: 40px;
+  }
+header nav a{
+    color:white;
+    text-align: center;
+}
+header nav a:hover{
+    color:rgb(218, 230, 218);
+}
+header .title {
+    padding:0 5%;
+}
+header .title h3{
+
+}
+header .title h5{
+
+}
+
+/* introduction */
+
+.introduction{
+    width:100%;
+}
+.intro-title{
+    padding:0 3%;
+}
+
+.fullImage{
+    object-fit: cover;
+    width:100%;
+}
+.introduction article{
+    padding:0 2%;
+}
+
+.introduction article p span{
+    color:#FF3B4E;
+}
+
+/* portfolio grid */
+.portfolio{
+}
+
+.portfolio h3{
+    text-align:center;
+    padding:20px 0;
+}
+.folio-grid {
+}
+  
+.folio-item{
+    width:100%;
+}
+
+.folio-item img{
+    object-fit: cover;
+    width:100%;
+}
+.folio-item figcaption{
+    padding:0 2%;
+    text-align:center;
+}
+main{
+
+}
+
+
+.contact {
+
+    padding:0px 4%;
+    /* background-color:blue; */
+}
+
+.contact h3{
+    text-align:center;
+    padding:20px 0;
+}
+.contact p{
+    text-align:center;
+}
+
+.contact form {
+    width:100%;
+    padding:30px 0;
+    
+}
+
+.contact form input {
+    text-align:center;
+    width:100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
