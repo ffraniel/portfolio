@@ -12,6 +12,7 @@ a{
 /* header and nav */
 
 header nav{
+    padding:0 5%;
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
     background-color:#FF3B4E;
@@ -23,6 +24,7 @@ header nav{
 header nav a{
     color:white;
     text-align: center;
+
 }
 header nav a:hover{
     color:rgb(218, 230, 218);
