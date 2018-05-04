@@ -36,45 +36,15 @@ header nav a{
 header nav a:hover{
     color:rgb(218, 230, 218);
 }
-header .title {
-    padding:40px 5% 0 5%;
-}
-header .title h3{
-    padding:5px 0;
-}
-
-header .title h5{
-    padding:5px 0;
-}
-
-/* introduction */
-
-.introduction{
-    width:100%;
-}
-.intro-title{
-    padding:5px 3%;
-}
-
-.fullImage{
-    object-fit: cover;
-    width:100%;
-}
-.introduction article{
-    padding:20px 3% 0 3%;
-}
-
-.introduction article p span{
-    color:#FF3B4E;
-}
 
 /* portfolio grid */
 .portfolio{
-    padding:20px 0 5px 0;
+    padding:40px 0 15px 0;
 }
 
 .portfolio h3{
     text-align:center;
+    font-size:1.5rem;
 }
 .folio-grid {
 }
@@ -109,36 +79,3 @@ header .title h5{
     bottom:0;
     height:100%;
 }
-
-main{
-
-}
-
-
-.contact {
-
-    padding:0px 4%;
-    /* background-color:blue; */
-}
-
-.contact h3{
-    text-align:center;
-    padding:20px 0;
-}
-.contact p{
-    text-align:center;
-}
-
-.contact form {
-    width:100%;
-    padding:30px 0;
-    
-}
-
-.contact form input {
-    text-align:center;
-    width:100%;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-}
-
