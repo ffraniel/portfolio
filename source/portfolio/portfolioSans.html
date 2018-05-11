@@ -7,7 +7,8 @@
     <title>Francis Whitehead | Web Developer - Javascript Developer - sanssouci.uk Band Website</title>
     <link rel="stylesheet" type="text/css" href="style/style-portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <!-- <script defer src="js/script-index.js"></script> -->
+    <script defer src="js/scroll-script.js"></script>
+    <script defer src="js/backgroundFadeIn.js"></script>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -23,27 +24,16 @@
     </header>
     <main class="portfolio-item">
         <h3>Sanssouci Band website</h3>
-        <h5>Key info about project</h5>
+        <h5>Band website using <span>HTML, CSS, JS, Gulp</span>.</h5>
         <img class="portfolio-image" src="images/sanssouciFull.jpg" alt="">
-        <p>Lots of text about background of project. Lots of text about background of project. Lots of text about background
-            of project. Lots of text about background of project.
-
-        </p>
-        <p>Lots of text about background of project. Lots of text about background of project. Lots of text about background
-            of project. Lots of text about background of project.
-
-        </p>
+        <p>I wanted to create a beautiful website for the band Sanssouci. The website was to go live to coincide with the release of their first double a-side single in May 2017. It would show the artwork, it would include a music player (using an iframe from Bandcamp.com where the single would be on sale) and would give some information about the release. </p>
+        <p>The majority of the page is HTML and CSS. Initially jQuery was used to give the smooth scrolling affects when navigation links are clicked and the Bootstrap framework for responsive layouts. In April 2018 I revisted the project to update things with best practice, a few minor tweaks to the design and to improve performance. </p>
         <img class="portfolio-image" src="images/sanssouciWebLargeTop.jpg" alt="">
-        <p>Lots of text about background of project. Lots of text about background of project. Lots of text about background
-            of project. Lots of text about background of project.
-
-        </p>
+        <p>I removed all the Bootstrap classes from the HTML markup and started writing CSS almost from scratch. Things look better on all screen sizes. I removed jQuery in order to reduce the page load time and instead added some custom JS to provide the smooth navigational scrolling.</p>
         <img class="portfolio-image" src="images/sanssouciWebSmallBandcamp.jpg" alt="">
-        <p>Lots of text about background of project. Lots of text about background of project. Lots of text about background
-            of project. Lots of text about background of project.
-
-        </p>
+        <p>In order to speed up performance I had to remove a background colour effect where the colour would ease from pink slowly into a purple hue and then back again. The effect was subtle and looked great but the huge animation made the page run very slowly, particularly on mobile phones.</p>
         <img class="portfolio-image" src="images/sanssouciWebMidGrid.jpg" alt="">
+        <p>Finally I used Gulp to minimise the CSS and JS respectively so that the website can serve an optimised page.</p>
     </main>
     <p class="downArrow">&#8681;</p>
     <footer id="portfolio" class="portfolio-preview">

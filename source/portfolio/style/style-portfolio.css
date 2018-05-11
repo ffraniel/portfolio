@@ -180,6 +180,10 @@ main {
     padding:5px 2%;
 }
 
+.portfolio-item h5 span{
+    color:#FF3B4E;
+}
+
 .portfolio-item p{
     padding:20px 3% 0 3%;
 }
