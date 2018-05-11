@@ -11,20 +11,19 @@ a{
 }
 /* header and nav */
 
+/* header and nav */
+
 header nav{
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
     background-color:rgba(255, 59, 79, 0.918);
+    background-color:#386c4cec;
     color:#FFFFFF;
-    font-family:arial;
-
     height:40px;
     line-height: 40px;
 	position: fixed;
 	top: 0;
     width: 100%;
-    /* overflow: hidden;	 */
-    /* min-height:80px; */
     left: 0px;
     right:0px;
     z-index: 1;
@@ -39,4 +38,45 @@ header nav a:hover{
 
 main {
     padding-top:40px;
+}
+
+@media(min-width:430px){
+    /* header and nav */
+    header nav{
+        grid-template-columns:20% 20% 20% 20% auto;
+    }
+}
+
+@media(min-width:480px){
+    /* header and nav */
+
+    header nav{
+        display:grid;
+        grid-template-columns:16% 16% 16% 16% auto;
+        grid-column: 1 / 2;
+        height:50px;
+        line-height: 50px;
+    }
+    header .title {
+        padding:50px 5% 0 5%;
+    }
+}
+
+@media(min-width:650px){
+    /* header and nav */
+    header nav{
+        grid-template-columns:12% 12% 12% 12% auto;
+    }
+}
+
+@media(min-width:880px){
+    /* header and nav */
+    header nav{
+        grid-template-columns:8% 8% 8% 8% auto;
+        height:60px;
+        line-height: 60px;
+    }
+    header nav a {
+        font-size:1.05rem;
+    }
 }

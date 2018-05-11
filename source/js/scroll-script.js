@@ -42,3 +42,7 @@ document.querySelector('#portfolioNav').addEventListener('click', (e)=>{
     e.preventDefault();
     scrollIt(document.querySelector('#portfolio'), 800, 'easeInOutCubic');
 })
+document.querySelector('.downArrow').addEventListener('click', (e)=>{
+  e.preventDefault();
+  scrollIt(document.querySelector('#portfolio'), 800, 'easeInOutCubic');
+})
