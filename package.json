@@ -12,5 +12,8 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.4",
     "gulp-uglify-es": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^4.1.0"
   }
 }
