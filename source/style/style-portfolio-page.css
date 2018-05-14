@@ -8,6 +8,23 @@ body{
 a{
     text-decoration: none;
 }
+
+/* fade pages */
+
+body {
+    opacity: 1;
+    transition: 0.25s opacity;
+  }
+  body.fade-out {
+    opacity: 0;
+    transition: none;
+  }
+  
+  body.fade-out-again {
+    opacity: 0;
+    transition: 0.25s opacity;
+  }
+
 /* header and nav */
 
 header nav{
@@ -124,7 +141,7 @@ main {
 .portfolio h3{
     text-align:center;
     font-size:2rem;
-    color:rgb(218, 197, 219);
+    color:rgb(129, 62, 131);
 }
 .folio-grid {
 }
