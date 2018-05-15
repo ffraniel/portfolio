@@ -4,6 +4,9 @@ body{
     font-family: 'Oxygen', arial, sans-serif;
     font-weight: 300;
   }
+  .border{
+      border:solid 0.5px red;
+  }
 
 a{
     text-decoration: none;
@@ -50,23 +53,11 @@ header nav a:hover{
     color:rgb(218, 230, 218);
 }
 
-header .title {
-    padding:40px 5% 0 5%;
-    text-align: center;
-    font-size:1.8rem;
-}
-
-header .title h5{
-    padding:5px 0;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    color:#0a0909;
-}
-
 /* introduction */
 
 .introduction{
     width:100%;
-    padding-top:0px;
+    padding-top:40px;
 }
 .intro-title{
     padding:5px 3%;
@@ -87,7 +78,7 @@ header .title h5{
     color:white;
     position: absolute; 
     top: 60%;  
-    width: 100%;    
+    /* width: 100%;     */
     left:45%;
     text-shadow: -1px -1px 5px #0b1420;
     font-size:0.8rem;
@@ -96,7 +87,7 @@ header .title h5{
     position: absolute; 
     top: 4%; 
     left: 7%; 
-    width: 100%;
+    /* width: 100%; */
     color:white;
     text-shadow: -0.5px -0.5px 5px #0b1420d8;
     font-size:1.2rem;
