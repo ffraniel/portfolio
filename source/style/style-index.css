@@ -66,15 +66,49 @@ header .title h5{
 
 .introduction{
     width:100%;
+    padding-top:0px;
 }
 .intro-title{
     padding:5px 3%;
 }
 
 .fullImage{
+    /* object-fit: cover;
+    width:100%; */
+    position:relative;
+}
+
+.fullImage img{
     object-fit: cover;
     width:100%;
 }
+
+.fullImage h5{
+    color:white;
+    position: absolute; 
+    top: 60%;  
+    width: 100%;    
+    left:45%;
+    text-shadow: -1px -1px 5px #0b1420;
+    font-size:0.8rem;
+}
+.fullImage .intro-title{
+    position: absolute; 
+    top: 4%; 
+    left: 7%; 
+    width: 100%;
+    color:white;
+    text-shadow: -0.5px -0.5px 5px #0b1420d8;
+    font-size:1.2rem;
+}
+.intro-title span{
+    color:#FF3B4E;
+    text-shadow: -0.5px -0.5px 1.5px #0b1420d8;
+}
+.fullImage h5 span{
+    color:#FF3B4E;
+}
+
 .introduction article{
     padding:20px 3% 0 3%;
 }
@@ -174,6 +208,12 @@ div.fade-bg{
     /* header and nav */
     header nav{
         grid-template-columns:20% 20% 20% 20% auto;
+    }
+    .fullImage h5{
+        font-size:1rem;
+    }
+    .fullImage .intro-title{
+        font-size:1.4rem;
     }
 }
 
