@@ -1,0 +1,1 @@
+document.addEventListener("scroll",()=>{var e=window.pageYOffset,t=document.body,o=document.documentElement,n=e/(Math.max(t.scrollHeight,t.offsetHeight,o.clientHeight,o.scrollHeight,o.offsetHeight)-window.innerHeight);document.querySelector(".fade-bg").style.opacity=n});
