@@ -1,3 +1,26 @@
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyCdvv-ne7tlAdaGJH6OW8e2RzNUSHk16Qg",
+    authDomain: "franwdev.firebaseapp.com",
+    databaseURL: "https://franwdev.firebaseio.com",
+    projectId: "franwdev",
+    storageBucket: "franwdev.appspot.com",
+    messagingSenderId: "262600794583"
+  };
+  firebase.initializeApp(config);
+
+// Reference messages collection
+var messageRef = firebase.database().ref('messages');
+
+// save messages to database
+const saveMessage = (email, message)=>{
+    var newMessageRef = messageRef.push();
+    newMessageRef.set({
+        email:email,
+        message:message
+    });
+}
+
 // listen for form event
 const getInputValue = (id)=>{
     return document.getElementById(id).value;
@@ -14,11 +37,8 @@ const submitForm = (e)=>{
     var message = getInputValue('message');
     if(checkEmailValue(email)){
         if(message.length > 0){
-            console.log({
-                email:email,
-                message:message,
-                success:true
-            })
+            // save message
+            saveMessage(email, message);
             document.querySelector('.invalid-email').style.display = 'none';
             document.querySelector('.no-message').style.display = 'none';
             document.querySelector('.message-sent').style.display = 'block';
@@ -39,5 +59,3 @@ const submitForm = (e)=>{
 }
 
 document.getElementById('contact-form').addEventListener('submit', submitForm);
-
-
