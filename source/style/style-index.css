@@ -33,7 +33,6 @@ body {
 header nav{
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
-    background-color:rgba(255, 59, 79, 0.918);
     background-color:#386c4cec;
     color:#FFFFFF;
     height:40px;
