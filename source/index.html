@@ -10,6 +10,7 @@
         <script defer src="js/scroll-script.js"></script>
         <script defer src="js/backgroundFadeIn.js"></script>
         <script defer src="js/fade-transition.js"></script>
+        <script defer src="js/form-handler.js"></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -71,10 +72,19 @@
         </main>
         <footer class="contact">
             <h3>Contact</h3>
-            <p>To contact me for work contact me on Linked-In or just type in your email below and i'll get back to you.</p>
-            <form>
-                <input type="text" placeholder="email" >
-                <input type="text" placeholder="subject">
+            <p>To contact me for work contact me on LinkedIn or just type in your email below and i'll get back to you.</p>
+            <div class="message-sent">
+                <h3>Message sent!</h3>
+            </div>
+            <div class="invalid-email">
+                <h3>Please include a valid email address.</h3>
+            </div>
+            <div class="no-message">
+                <h3>The message space was left blank. Please write something before sending.</h3>
+            </div>
+            <form id="contact-form">
+                <input type="text" placeholder="email" id="email" required >
+                <input type="text" placeholder="message" id="message" required >
                 <input type="submit">
             </form>
         </footer>
