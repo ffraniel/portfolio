@@ -14,10 +14,12 @@ var messageRef = firebase.database().ref('messages');
 
 // save messages to database
 const saveMessage = (email, message)=>{
+    var date = new Date().getTime();
     var newMessageRef = messageRef.push();
     newMessageRef.set({
         email:email,
-        message:message
+        message:message,
+        date:date
     });
 }
 
