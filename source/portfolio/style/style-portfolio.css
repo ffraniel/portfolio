@@ -227,3 +227,12 @@ main {
 .title{
     text-align: center;
 }
+
+.center-link {
+    text-align: center;
+    color:purple;
+}
+
+.center-link:hover a {
+    color:lightcoral;
+}
