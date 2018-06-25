@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Francis Whitehead | Web Developer - Javascript Developer - Eurovision Lyrics Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style/style-portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script defer src="js/scroll-script.js"></script>
+    <script defer src="js/backgroundFadeIn.js"></script>
+    <script defer src="js/fade-transition.js"></script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <script>
+        document.body.classList.add("fade-out");     
+    </script>
+    <header>
+        <nav>
+            <a id="homeNav" href="../index.html">Home</a>
+            <a id="portfolioNav" href="../portfolio.html">Portfolio</a>
+            <a id="githubNav" href="https://github.com/ffraniel/">Github</a>
+            <a id="linkedinNav" href="https://www.linkedin.com/in/francis-whitehead-394023155/">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main class="portfolio-item">
+        <h3>Eurovision 2018 Lyrics Quiz built with React</h3>
+        <h5>Guess the nationality of the song from a small given snippet of the lyrics. Built with <span>React.js</span></h5>
+        <h3 class="center-link"><a href="https://eurovision-lyrics-2018.firebaseapp.com/">Visit Eurovion Lyrics App 2018</a></h3>
+        <img class="portfolio-image" src="images/eurovisionFrontPage.jpg" alt="front page of eurovision lyrics 2018 app">
+        <p>I decided to make this the day before the Eurovision Finals. I spent a great deal of that time trying to find good sources of data about the songs. In order for this to be complete i would need to track down the details for every song; the artist, song title, lyrics and image of the act. I taught myself some rudimentary web scraping techniques, npm installed Cheerio and Require and got to work. It was a fun project working out how to automate collecting all the data.</p>
+        <img class="portfolio-image" src="images/eurovisionQuestion.jpg" alt="App asks question, with snippet of song lyrics and option of five nations to answer with.">
+        <p>Then i put together the React app itself. On initial load it comes to an intro page. When you click to start the game i switch out the intro page for the 'GamePlay.js' component. This component starts on question and when an answer is given it flips over to answer mode.</p>
+        <img class="portfolio-image" src="images/eurovisionCorrectAnswer.jpg" alt="Showing the correct answer display.">
+        <p>The position in the quiz and the score are kept on display in the GamePlay component. When all the rounds are complete it shows your score and asks if you want to play again, and the button just resets the game state to zero and shows the intro page.</p>
+        <img class="portfolio-image" src="images/eurovisionFinalScore.jpg" alt="Image of kid with bad marks on exam paper giving a thumbs down next to the player's final score.">
+        <p></p>
+    </main>
+
+    <p class="downArrow">&#8681;</p>
+
+    <footer id="portfolio" class="portfolio-preview">
+        <h3 class="title">Other portfolio items</h3>
+        <section class="folio-grid">
+
+            <div class="folio-item">
+                <a href="portfolioSans.html">
+                    <figcaption>Band website using HTML, CSS and vanilla JS.</figcaption>
+                    <img src="images/sanssouciFull.jpg" alt="Band website using HTML, CSS and vanilla JS">
+                </a>
+            </div>
+            <div class="folio-item">
+                <a href="portfolioSaidditBE.html">
+                    <figcaption>Back-end of a Reddit Clone RESTful API using NodeJS, Express and MongoDB.</figcaption>
+                    <img src="images/beItFull.jpg" alt="Back end of Reddit Clone RESTful API using NodeJS, Express and MongoDB">
+                </a>
+            </div>
+            <div class="folio-item">
+                <a href="portfolioSaidditFE.html">
+                    <figcaption>Front end of a Reddit Clone using React.</figcaption>
+                    <img src="images/saidditFull.jpg" alt="Front end of Reddit Clone using React">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <div class="fade-bg-FE fade-bg">
+    </div>
+</body>
+
+</html>

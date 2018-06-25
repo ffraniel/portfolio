@@ -23,6 +23,11 @@ const saveMessage = (email, message)=>{
     });
 }
 
+messageRef.on('value', (snapshot) => {
+    console.log(snapshot.val())
+    // updateStarCount(postElement, snapshot.val());
+})
+
 // listen for form event
 const getInputValue = (id)=>{
     return document.getElementById(id).value;
