@@ -13,6 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
     <script>
         document.body.classList.add("fade-out");     
@@ -28,14 +29,26 @@
 
     <main class="portfolio-item">
         <h3>Eurovision 2018 Lyrics Quiz built with React</h3>
-        <h5>Guess the nationality of the song from a small given snippet of the lyrics. Built with <span>React.js</span></h5>
-        <h3 class="center-link"><a href="https://eurovision-lyrics-2018.firebaseapp.com/">Visit Eurovion Lyrics App 2018</a></h3>
+        <h5>Guess the nationality of the song from a small given snippet of the lyrics. Built with
+            <span>React.js</span>
+        </h5>
+        <h3 class="center-link">
+            <a href="https://eurovision-lyrics-2018.firebaseapp.com/">Visit Eurovion Lyrics App 2018</a>
+        </h3>
         <img class="portfolio-image" src="images/eurovisionFrontPage.jpg" alt="front page of eurovision lyrics 2018 app">
-        <p>I decided to make this the day before the Eurovision Finals. I spent a great deal of that time trying to find good sources of data about the songs. In order for this to be complete i would need to track down the details for every song; the artist, song title, lyrics and image of the act. I taught myself some rudimentary web scraping techniques, npm installed Cheerio and Require and got to work. It was a fun project working out how to automate collecting all the data.</p>
+        <p>I decided to make this the day before the Eurovision Finals. I spent a great deal of that time trying to find good
+            sources of data about the songs. In order for this to be complete i would need to track down the details for
+            every song; the artist, song title, lyrics and image of the act. I taught myself some rudimentary web scraping
+            techniques, npm installed Cheerio and Require and got to work. It was a fun project working out how to automate
+            collecting all the data.</p>
         <img class="portfolio-image" src="images/eurovisionQuestion.jpg" alt="App asks question, with snippet of song lyrics and option of five nations to answer with.">
-        <p>Then i put together the React app itself. On initial load it comes to an intro page. When you click to start the game i switch out the intro page for the 'GamePlay.js' component. This component starts on question and when an answer is given it flips over to answer mode.</p>
+        <p>Then i put together the React app itself. On initial load it comes to an intro page. When you click to start the
+            game i switch out the intro page for the 'GamePlay.js' component. This component starts on question and when
+            an answer is given it flips over to answer mode.</p>
         <img class="portfolio-image" src="images/eurovisionCorrectAnswer.jpg" alt="Showing the correct answer display.">
-        <p>The position in the quiz and the score are kept on display in the GamePlay component. When all the rounds are complete it shows your score and asks if you want to play again, and the button just resets the game state to zero and shows the intro page.</p>
+        <p>The position in the quiz and the score are kept on display in the GamePlay component. When all the rounds are complete
+            it shows your score and asks if you want to play again, and the button just resets the game state to zero and
+            shows the intro page.</p>
         <img class="portfolio-image" src="images/eurovisionFinalScore.jpg" alt="Image of kid with bad marks on exam paper giving a thumbs down next to the player's final score.">
         <p></p>
     </main>
@@ -68,6 +81,12 @@
                 <a href="portfolioEurovisionLyrics.html">
                     <figcaption>Eurovision Lyrics Quiz using React.</figcaption>
                     <img src="images/eurovisionWrongAnswer.jpg" alt="Image of Eurovision React quiz in action - getting the question wrong.">
+                </a>
+            </div>
+            <div class="folio-item">
+                <a href="portfolioWikipediaSearch.html">
+                    <figcaption>Search Wikipedia with instant feedback using React</figcaption>
+                    <img src="images/wikiSearchFull.jpg" alt="Front page of wiki search app">
                 </a>
             </div>
         </section>
