@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Francis Whitehead | Web Developer - Javascript Developer - sanssouci.uk Band Website</title>
+    <title>Francis Whitehead | Web Developer - Javascript Developer - Are England still in the World Cup Russia 2018?</title>
     <link rel="stylesheet" type="text/css" href="style/style-portfolio.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
     <script defer src="js/scroll-script.js"></script>
@@ -27,34 +27,25 @@
         </nav>
     </header>
     <main class="portfolio-item">
-        <h3>Sanssouci Band website</h3>
-        <h5>Band website using
-            <span>HTML, CSS, JS, Gulp</span>.</h5>
+        <h3>Are England Still In the World Cup Russia 2018?</h3>
+        <h5>A website showing if England are still in the World Cup, using <span>Google Firebase Serverless Functions</span></h5>
         <h3 class="center-link">
-            <a href="http://sanssouci.uk/">Visit Sanssouci band site</a>
+            <a href="https://areenglandstillintheworldcup.firebaseapp.com/">Visit 'Are England Still In the World Cup Russia 2018?'</a>
         </h3>
-        <img class="portfolio-image" src="images/sanssouciFull.jpg" alt="">
-        <p>I wanted to create a beautiful website for the band Sanssouci. The website was to go live to coincide with the release
-            of their first double a-side single in May 2017. It would show the artwork, it would include a music player (using
-            an iframe from Bandcamp.com where the single would be on sale) and would give some information about the release.
-            </p>
-        <p>The majority of the page is HTML and CSS. Initially jQuery was used to give the smooth scrolling affects when navigation
-            links are clicked and the Bootstrap framework for responsive layouts. In April 2018 I revisted the project to
-            update things with best practice, a few minor tweaks to the design and to improve performance. </p>
-        <img class="portfolio-image" src="images/sanssouciWebLargeTop.jpg" alt="">
-        <p>I removed all the Bootstrap classes from the HTML markup and started writing CSS almost from scratch. Things look
-            better on all screen sizes. I removed jQuery in order to reduce the page load time and instead added some custom
-            JS to provide the smooth navigational scrolling.</p>
-        <img class="portfolio-image" src="images/sanssouciWebSmallBandcamp.jpg" alt="">
-        <p>In order to speed up performance I had to remove a background colour effect where the colour would ease from pink
-            slowly into a purple hue and then back again. The effect was subtle and looked great but the huge animation made
-            the page run very slowly, particularly on mobile phones.</p>
-        <img class="portfolio-image" src="images/sanssouciWebMidGrid.jpg" alt="">
-        <p>Finally I used Gulp to minimise the CSS and JS respectively so that the website can serve an optimised page.</p>
+        <img class="portfolio-image" src="images/EIWCFull.jpg" alt="Showing whether England are still in WC overlayed on England flag">
+        <p>A website which shows if England are still in the world cup making use of a simple serverless setup using Firebase Functions.</p>
+        <p>The site itself is hosted on Firebase hosting. Integration between their hosting service and their 'Functions' service was really quite satisfying. The front end makes a request to a database (which contains only one value!) to get the current status of the England team. The page initially shows a blurry loading screen. Then the value is returned, the screen blur is removed and the value is rendered to the page. </p>
+        <img class="portfolio-image" src="images/EIWCbackend200.jpg" alt="Image of JSON response to changes made on the back-end.">
+        <p>Above we see response from making a simple get request to the Functions back-end. I have sent a query value to the URL and that has updated the database appropriately and return me a confirmation.</p>
+        <img class="portfolio-image" src="images/EIWCbackendErrorFull.jpg" alt="Image of the back-end response when the request was not a boolean.">
+        <p>Next we see what happens when i send a query value that is invalid (not a boolean).</p>
+        <p>I always found these websites with one purpose, you know, to answer the question that is in their URL and title. I considered doing one for every team still in the World Cup but some of those flags would be pretty difficult to do in CSS (i'm looking at you Croatia and Brazil).</p>
     </main>
+
     <p class="downArrow">&#8681;</p>
     <footer id="portfolio" class="portfolio-preview">
         <h3 class="title">Other portfolio items</h3>
+
         <section class="folio-grid">
             <div class="folio-item">
                 <a href="portfolioSaidditBE.html">
@@ -81,20 +72,21 @@
                 </a>
             </div>
             <div class="folio-item">
-                <a href="portfolioWorldCupEngland.html">
-                    <figcaption>Are England are still in the World Cup, using Google Firebase Serverless Functions</figcaption>
-                    <img src="images/EIWCFull.jpg" alt="Front page of the website.">
-                </a>
-            </div>
-            <div class="folio-item">
                 <a href="portfolioWikipediaSearch.html">
                     <figcaption>Search Wikipedia with instant feedback using React</figcaption>
                     <img src="images/wikiSearchFull.jpg" alt="Front page of wiki search app">
                 </a>
             </div>
+            <div class="folio-item">
+                <a href="portfolioWorldCupEngland.html">
+                    <figcaption>Are England are still in the World Cup, using Google Firebase Serverless Functions</figcaption>
+                    <img src="images/EIWCFull.jpg" alt="Front page of the website.">
+                </a>
+            </div>
 
         </section>
     </footer>
+
     <div class="fade-bg-Sans fade-bg">
     </div>
 </body>
