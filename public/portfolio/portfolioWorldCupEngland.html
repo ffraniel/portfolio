@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Francis Whitehead | Web Developer - Javascript Developer - Are England still in the World Cup Russia 2018?</title>
+    <link rel="stylesheet" type="text/css" href="style/style-portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script defer src="js/scroll-script.js"></script>
+    <script defer src="js/backgroundFadeIn.js"></script>
+    <script defer src="js/fade-transition.js"></script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <script>
+        document.body.classList.add("fade-out");     
+    </script>
+    <header>
+        <nav>
+            <a id="homeNav" href="../index.html">Home</a>
+            <a id="portfolioNav" href="../portfolio.html">Portfolio</a>
+            <a id="githubNav" href="https://github.com/ffraniel/">Github</a>
+            <a id="linkedinNav" href="https://www.linkedin.com/in/francis-whitehead-394023155/">LinkedIn</a>
+        </nav>
+    </header>
+    <main class="portfolio-item">
+        <h3>Are England Still In the World Cup Russia 2018?</h3>
+        <h5>A website showing if England are still in the World Cup, using <span>Google Firebase Serverless Functions</span></h5>
+        <h3 class="center-link">
+            <a href="https://areenglandstillintheworldcup.firebaseapp.com/">Visit 'Are England Still In the World Cup Russia 2018?'</a>
+        </h3>
+        <img class="portfolio-image" src="images/EIWCFull.jpg" alt="Showing whether England are still in WC overlayed on England flag">
+        <p>A website which shows if England are still in the world cup making use of a simple serverless setup using Firebase Functions.</p>
+        <p>The site itself is hosted on Firebase hosting. Integration between their hosting service and their 'Functions' service was really quite satisfying. The front end makes a request to a database (which contains only one value!) to get the current status of the England team. The page initially shows a blurry loading screen. Then the value is returned, the screen blur is removed and the value is rendered to the page. </p>
+        <img class="portfolio-image" src="images/EIWCbackend200.jpg" alt="Image of JSON response to changes made on the back-end.">
+        <p>Above we see response from making a simple get request to the Functions back-end. I have sent a query value to the URL and that has updated the database appropriately and return me a confirmation.</p>
+        <img class="portfolio-image" src="images/EIWCbackendErrorFull.jpg" alt="Image of the back-end response when the request was not a boolean.">
+        <p>Next we see what happens when i send a query value that is invalid (not a boolean).</p>
+        <p>I always found these websites with one purpose, you know, to answer the question that is in their URL and title. I considered doing one for every team still in the World Cup but some of those flags would be pretty difficult to do in CSS (i'm looking at you Croatia and Brazil).</p>
+    </main>
+
+    <p class="downArrow">&#8681;</p>
+    <footer id="portfolio" class="portfolio-preview">
+        <h3 class="title">Other portfolio items</h3>
+
+        <section class="folio-grid">
+            <div class="folio-item">
+                <a href="portfolioSaidditBE.html">
+                    <figcaption>Back-end of a Reddit Clone RESTful API using NodeJS, Express and MongoDB.</figcaption>
+                    <img src="images/beItFull.jpg" alt="Back end of Reddit Clone RESTful API using NodeJS, Express and MongoDB">
+                </a>
+            </div>
+            <div class="folio-item">
+                <a href="portfolioSaidditFE.html">
+                    <figcaption>Front end of a Reddit Clone using React.</figcaption>
+                    <img src="images/saidditFull.jpg" alt="Front end of Reddit Clone using React">
+                </a>
+            </div>
+            <div class="folio-item">
+                <a href="portfolioEurovisionLyrics.html">
+                    <figcaption>Eurovision Lyrics Quiz using React.</figcaption>
+                    <img src="images/eurovisionWrongAnswer.jpg" alt="Image of Eurovision React quiz in action - getting the question wrong.">
+                </a>
+            </div>
+            <div class="folio-item">
+                <a href="portfolioSans.html">
+                    <figcaption>Band website using HTML, CSS and vanilla JS.</figcaption>
+                    <img src="images/sanssouciFull.jpg" alt="Band website using HTML, CSS and vanilla JS">
+                </a>
+            </div>
+            <div class="folio-item">
+                <a href="portfolioWikipediaSearch.html">
+                    <figcaption>Search Wikipedia with instant feedback using React</figcaption>
+                    <img src="images/wikiSearchFull.jpg" alt="Front page of wiki search app">
+                </a>
+            </div>
+            <div class="folio-item">
+                <a href="portfolioWorldCupEngland.html">
+                    <figcaption>Are England are still in the World Cup, using Google Firebase Serverless Functions</figcaption>
+                    <img src="images/EIWCFull.jpg" alt="Front page of the website.">
+                </a>
+            </div>
+
+        </section>
+    </footer>
+
+    <div class="fade-bg-Sans fade-bg">
+    </div>
+</body>
+
+</html>
