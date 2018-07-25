@@ -1,3 +1,9 @@
+/* adding IE support to 'main' tag  */
+
+main { 
+    display: block; 
+}
+
 /* globals */
 body{
     margin: 0 auto;
